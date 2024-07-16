@@ -1,0 +1,9 @@
+aitviewer
+trimesh
+glfw
+chumpy
+smplx
+tqdm
+scikit-learn
+pandas
+matplotlib
