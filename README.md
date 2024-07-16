@@ -74,6 +74,8 @@ Then you can run the following command to visualize the dataset.
 python visualize/skel_viewer.py
 # Visualize the SMPLX
 python visualize/smplx_viewer.py
+# Visualize the segment data
+python visualize/segment_viewer.py
 ```
 
 ## Data Preprocessing
