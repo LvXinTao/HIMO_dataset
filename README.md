@@ -20,10 +20,6 @@ This repository contains the content of the following paper:
 > HIMO: A New Benchmark for Full-Body Human Interacting with Multiple Objects <br> Xintao Lv <sup>1,* </sup>, Liang Xu <sup>1,2* </sup>, Yichao Yan <sup>1</sup>, Xin Jin <sup>2</sup>, Congsheng Xu <sup>1</sup>, Shuwen Wu<sup>1</sup>, Yifan Liu<sup>1</sup>, Lincheng Li<sup>3</sup>, Mengxiao Bi<sup>3</sup>, Wenjun Zeng<sup>2</sup>, Xiaokang Yang <sup>1</sup> <br>
 > <sup>1</sup> Shanghai Jiao Tong University , <sup>2</sup> Eastern Institute of Technology, Ningbo, <sup>3</sup> NetEase Fuxi AI Lab
 
-##  TODO
-- [ ] A user-friendly segment viewer
-- [ ] Data-preprocessing
-
 
 ## Dataset Download
 Please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSdl5adeyKxBSBFZpgs0A7-dAouRkMFAGUP5iz3zxGDj_PhB1w/viewform) to request authorization to download HIMO for research purposes.
@@ -78,4 +74,23 @@ python visualize/smplx_viewer.py
 python visualize/segment_viewer.py
 ```
 
-## Data Preprocessing
+## Training 
+To train the model in 2-object setting, run
+```bash
+python -m src.train.train_net_2o --exp_name net_2o --num_epochs 1000
+```
+To train the model in 3-object setting, run
+```bash
+python -m src.train.train_net_3o --exp_name net_3o --num_epochs 1000
+```
+To evaluate the model, you need to train your own evaluator or use the checkpoint we provide [here]() (put them under `./save`).
+Then run
+```bash
+python -m src.eval.eval_himo_2o
+```
+or
+```bash
+python -m src.eval.eval_himo_3o
+```
+
+## Visualization

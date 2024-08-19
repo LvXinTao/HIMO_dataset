@@ -1,3 +1,5 @@
 /body_models/
 /data/
 imgui.ini
+__pycache__/
+save/
