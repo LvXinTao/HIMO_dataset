@@ -83,7 +83,7 @@ To train the model in 3-object setting, run
 ```bash
 python -m src.train.train_net_3o --exp_name net_3o --num_epochs 1000
 ```
-To evaluate the model, you need to train your own evaluator or use the checkpoint we provide [here]() (put them under `./save`).
+To evaluate the model, you need to train your own evaluator or use the checkpoint we provide [here](https://drive.google.com/drive/folders/11PYdla0R9GIyYXqDPMle9208Hv8MaUMo?usp=sharing) (put them under `./save`).
 Then run
 ```bash
 python -m src.eval.eval_himo_2o
