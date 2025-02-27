@@ -75,6 +75,8 @@ python visualize/segment_viewer.py
 ```
 
 ## Training 
+We provide preprocessd objects' BPS and vocabulary glove files [here](https://drive.google.com/drive/folders/11PYdla0R9GIyYXqDPMle9208Hv8MaUMo?usp=sharing).
+
 To train the model in 2-object setting, run
 ```bash
 python -m src.train.train_net_2o --exp_name net_2o --num_epochs 1000
@@ -92,5 +94,3 @@ or
 ```bash
 python -m src.eval.eval_himo_3o
 ```
-
-## Visualization
