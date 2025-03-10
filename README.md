@@ -21,6 +21,10 @@ This repository contains the content of the following paper:
 > <sup>1</sup> Shanghai Jiao Tong University , <sup>2</sup> Eastern Institute of Technology, Ningbo, <sup>3</sup> NetEase Fuxi AI Lab
 
 
+## News
+- [2025.03.10] We release the processed data for training and evaluation, please fill out the [this form](https://docs.google.com/forms/d/e/1FAIpQLSdl5adeyKxBSBFZpgs0A7-dAouRkMFAGUP5iz3zxGDj_PhB1w/viewform) to request `processed_2o.tar.gz` and `processed_3o.tar.gz`.
+
+
 ## Dataset Download
 Please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSdl5adeyKxBSBFZpgs0A7-dAouRkMFAGUP5iz3zxGDj_PhB1w/viewform) to request authorization to download HIMO for research purposes.
 After downloading the dataset, unzip the data in `./data` and you'll get the following structure:
@@ -43,6 +47,10 @@ After downloading the dataset, unzip the data in `./data` and you'll get the fol
 |   |-- ...
 |-- object_mesh
 |   |-- Apple.obj
+|   |-- ...
+|-- processed_2o
+|   |-- ...
+|-- processed_3o
 |   |-- ...
 
 ```
